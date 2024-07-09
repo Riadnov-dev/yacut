@@ -1,10 +1,11 @@
 from flask import jsonify, render_template, request
 
 from . import app
+from .constants import HTTP_BAD_REQUEST, HTTP_NOT_FOUND
 
 
 class InvalidAPIUsage(Exception):
-    status_code = 400
+    status_code = HTTP_BAD_REQUEST
 
     def __init__(self, message, status_code=None):
         super().__init__()
@@ -24,5 +25,5 @@ def invalid_api_usage(error):
 @app.errorhandler(404)
 def page_not_found(error):
     if request.path.startswith("/api/"):
-        return jsonify({"message": "Указанный id не найден"}), 404
-    return render_template("404.html"), 404
+        return jsonify({"message": "Указанный id не найден"}), HTTP_NOT_FOUND
+    return render_template("404.html"), HTTP_NOT_FOUND

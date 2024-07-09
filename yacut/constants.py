@@ -1,0 +1,15 @@
+import string
+
+from http import HTTPStatus
+
+MAX_CUSTOM_ID_LENGTH = 16
+CUSTOM_ID_REGEX = "^[a-zA-Z0-9]*$"
+MAX_ORIGINAL_LINK_LENGTH = 2048
+
+SHORT_ID_LENGTH = 6
+CHARACTERS = string.ascii_letters + string.digits
+
+HTTP_BAD_REQUEST = HTTPStatus.BAD_REQUEST
+HTTP_CREATED = HTTPStatus.CREATED
+HTTP_NOT_FOUND = HTTPStatus.NOT_FOUND
+HTTP_OK = HTTPStatus.OK

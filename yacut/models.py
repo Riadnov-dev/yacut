@@ -11,7 +11,8 @@ class URLMap(db.Model):
 
     def to_dict_url_only(self):
         return dict(
-            url=self.original)
+            url=self.original
+        )
 
     def from_dict(self, data):
         for field in ["original", "short"]:
