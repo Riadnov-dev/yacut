@@ -1,34 +1,41 @@
 # 🔗 Yacut — URL Shortener (Flask)
-A clean, production-ready URL shortener built with Flask.
-Create compact links with optional custom IDs, redirect to original URLs, and use a simple web UI or a JSON API. Includes migrations (Alembic), tests (pytest), OpenAPI spec, and a Postman collection.
 
-## 🧰 Tech Stack
-[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-Web%20Framework-000?logo=flask)](https://flask.palletsprojects.com/)
-[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-8A2BE2?logo=python)](https://docs.sqlalchemy.org/)
-[![Alembic](https://img.shields.io/badge/Alembic-DB%20Migrations-4B8BBE?logo=python)](https://alembic.sqlalchemy.org/)
-[![WTForms](https://img.shields.io/badge/WTForms-Form%20Handling-FFB300?logo=python)](https://wtforms.readthedocs.io/)
-[![Jinja2](https://img.shields.io/badge/Jinja2-Template%20Engine-orange?logo=jinja)](https://jinja.palletsprojects.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![Pytest](https://img.shields.io/badge/Pytest-Testing%20Framework-0A9EDC?logo=pytest)](https://docs.pytest.org/)
-[![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-6BA539?logo=openapiinitiative&logoColor=white)](https://www.openapis.org/)
-[![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white)](https://www.postman.com/)
+A **production-ready URL shortener** built with **Flask**.  
+Users can create compact links with optional custom IDs, redirect to original URLs, and interact via a simple **web UI** or a **JSON API**.  
+The project includes **migrations (Alembic)**, **tests (pytest)**, **OpenAPI spec**, and a **Postman collection**.  
 
+---
 
-### ✨ Features
-Shorten long URLs with optional custom short IDs
+## 📌 About the Project  
 
-Redirect short → original URL
+**Yacut** is a minimal yet reliable **URL shortener service**.  
+It allows users to:  
+- Shorten long URLs into compact links  
+- Optionally define their own short IDs  
+- Use both a **browser-based UI** and a **RESTful API**  
+- Explore API documentation via **OpenAPI spec** or **Postman collection**  
 
-Web UI (form + validation) and JSON API
+This project is structured for real-world deployment, with database migrations, validation, and automated tests.  
 
-OpenAPI spec (swagger-compatible) and Postman collection
+---
 
-Database migrations with Alembic
+## 🧰 Tech Stack  
 
-Error handlers with clean JSON responses
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/SQLAlchemy-8A2BE2?style=for-the-badge&logo=alchemy&logoColor=white"/> <img src="https://img.shields.io/badge/Alembic-4B8BBE?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/WTForms-FFB300?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Jinja2-B4172D?style=for-the-badge&logo=jinja&logoColor=white"/> <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAPI-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white"/> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
 
-Automated tests (pytest)
+---
+
+## ✨ Features  
+
+- 🔗 **Shorten long URLs** with optional custom short IDs  
+- ↪️ **Redirect short → original URL**  
+- 🖥️ **Web UI** with form validation + **JSON API**  
+- 📑 **OpenAPI spec** (Swagger-compatible) and **Postman collection**  
+- 🗄️ **Database migrations** with Alembic  
+- ⚡ **Error handlers** with clean JSON responses  
+- 🧪 **Automated tests** with pytest  
+
+---
 
 ### 🚀 Quick Start
 Clone the repository:
